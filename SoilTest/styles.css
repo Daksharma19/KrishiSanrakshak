@@ -1,0 +1,269 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8f5e9; 
+  background-image: url('crop.jpg'); 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: fadeIn 1s ease-in; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  position: relative;
+  width: 90%; 
+  max-width: 670px; 
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 10px; 
+  box-shadow: 0 8px 16px rgba(0, 128, 0, 0.4); 
+  animation: slideIn 1s ease-out, float 5s infinite ease-in-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  max-height: 90vh; /* Prevent exceeding viewport height */
+  overflow-y: auto; /* Scroll if content exceeds height */
+  min-height: 100%; 
+  box-sizing: border-box; 
+}
+
+/* Keyframes for Container Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.submit-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(90deg, #fbbf24, #f87171);
+  border-radius: 50px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  background: linear-gradient(90deg, #fca5a5, #fbbf24); /* Color change on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deepened shadow */
+}
+
+.submit-btn:focus {
+  outline: none;
+  border: 2px solid #fbbf24; /* Focus border */
+}
+
+.submit-btn span {
+  display: block;
+  padding: 0.2rem 0;
+}
+
+.submit-btn:active {
+  transform: translateY(0px); /* Button click effect */
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Language Toggle */
+.language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.language-toggle button {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.language-toggle button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Form Title */
+.form-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2e7d32; /* Green text */
+  transform: rotateY(0deg);
+  animation: rotateTitle 3s infinite ease-in-out;
+}
+
+/* Keyframes for Rotating Title */
+@keyframes rotateTitle {
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Price Section */
+.price-card {
+  background-color: #c8e6c9; /* Light green background */
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid #66bb6a; /* Green border */
+  box-shadow: 0 4px 8px rgba(102, 187, 106, 0.5);
+}
+
+.price-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+.select-payment-text {
+  font-size: 14px;
+  color: #388e3c;
+}
+
+/* Form Fields */
+.form-field {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #66bb6a;
+  border-radius: 5px;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 5px #4CAF50; /* Green glow on focus */
+  outline: none;
+  transform: scale(1.02); /* Slight zoom on focus */
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #388e3c;
+  transform: scale(1.1) rotateX(10deg);
+  box-shadow: 0 8px 16px rgba(56, 142, 60, 0.5); /* Green hover shadow */
+}
+
+/* QR Code Section */
+.qr-code-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qr-code {
+  width: 100px;
+  height: 100px;
+  background-image: url('qr_code.png');
+  background-size: cover; 
+  background-position: center center;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 3px solid #4CAF50;
+}
+
+/* Keyframes for QR Spin */
+@keyframes spinQR {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hidden Elements */
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .price-card {
+    padding: 12px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+}

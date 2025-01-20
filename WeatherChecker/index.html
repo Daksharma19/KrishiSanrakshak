@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language
+          includedLanguages: 'en,hi', // Available languages
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+          autoDisplay: true // Prevent auto display of language selector
+        },
+        'google_translate_element' // The ID of the container
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+   
+    <a href="windmap.html">Live Wind Map</a>
+    
+    <a href="hourly-forecast.html">Hourly Forecast</a>
+    <a href="news.html">Weather News</a>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Enter city name..." />
+        <button id="searchButton">Search</button>
+      </div>
+    </header>
+    
+    <main>
+      <!-- Current Weather Section -->
+      <section class="weather-info">
+        <h2 id="location">City, Country</h2>
+        <div class="current-weather">
+          <img id="weather-icon" src="" alt="Weather Icon" />
+          <p id="temperature">--°C</p>
+          <p id="description">Weather Description</p>
+          <p id="aqi">Air Quality: --</p>
+          <p id="humidity">Humidity: --%</p>
+          <p id="precipitation">Precipitation: --mm</p>
+          <p id="uv-index">UV Index: --</p>
+        </div>
+      </section>
+
+      <!-- 5-Day Weather Forecast -->
+      <section class="forecast">
+        <h3>5-Day Forecast</h3>
+        <div id="forecast-container" class="forecast-container"></div>
+      </section>
+
+      <!-- Hourly Forecast -->
+      <!-- <section class="hourly-forecast">
+        <h2 id="location-title">Hourly Forecast</h2>
+        <div id="hourly-container" class="hourly-container"></div>
+      </section> -->
+
+      <!-- Additional Weather Parameters -->
+      <!-- <section class="additional-parameters">
+        <h2>Additional Weather Parameters</h2>
+        <div id="parameters-container" class="parameters-grid"></div>
+      </section> -->
+
+      
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+
+   <!-- News Ticker -->
+   <div class="news-ticker">
+    <div class="ticker-content">
+      <span>Delhi: AQI 160 (Moderate) | Mumbai: Clear Skies, 32°C | Kolkata: 28°C, Light Rain | Bangalore: 25°C, Partly Cloudy | Chennai: 35°C, Sunny | Hyderabad: 30°C, Scattered Clouds</span>
+    </div>
+  </div>
+
+</body>
+</html>

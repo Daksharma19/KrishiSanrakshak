@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soil Test Form</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language
+          includedLanguages: 'en,hi', // Available languages
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+          autoDisplay: true // Prevent auto display of language selector
+        },
+        'google_translate_element' // The ID of the container
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <div class="container">
+    <!-- <div class="language-toggle">
+      <button onclick="setLanguage('en')" aria-pressed="false" aria-label="Switch to English">English</button>
+      <button onclick="setLanguage('hi')" aria-pressed="false" aria-label="Switch to Hindi">हिंदी</button>
+    </div> -->
+
+    <!-- Form -->
+    <form action="https://api.web3forms.com/submit" method="POST" id="soil-test-form" class="form-container" novalidate>
+
+      <!-- Hidden Access Key -->
+      <input type="hidden" name="access_key" value="1845aade-d5ab-442c-8798-094d00545413">
+
+      <h2 id="form-title" class="form-title">Soil Test Form</h2>
+      <!-- Price Section -->
+      <div class="price-card">
+        <p id="price" class="price-text">Price: &#8377 499</p>
+        <img src="qr_code.png" style="width: 100px;">
+        <p id="select-payment" class="select-payment-text">Pay On this QR</p>
+      </div>
+
+      <!-- Name -->
+      <div class="form-field">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Full Name" required>
+      </div>
+
+      <!-- Email -->
+      <div class="form-field">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
+      </div>
+
+      <!-- Phone -->
+      <div class="form-field">
+        <label for="phone" id="phone-label">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required pattern="^[0-9]{10}$">
+      </div>
+
+      <!-- Address -->
+      <div class="form-field">
+        <label for="address" id="address-label">Address</label>
+        <textarea name="address" id="address" placeholder="Address" required></textarea>
+      </div>
+
+      <!-- Soil Type -->
+      <div class="form-field">
+        <label for="soilType" id="soil-type-label">Soil Type</label>
+        <select name="soilType" id="soilType" required>
+          <option value="sandy">Sandy</option>
+          <option value="clay">Clay</option>
+          <option value="silty">Silty</option>
+          <option value="loamy">Loamy</option>
+        </select>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="form-field">
+        <label for="description" id="description-label">Additional Information</label>
+        <textarea name="description" id="description" placeholder="Additional Information"></textarea>
+      </div>
+
+      <!-- Payment Method -->
+      <!-- <div class="form-field">
+    <label for="paymentMethod" id="payment-method-label">Payment Method</label>
+    <select name="paymentMethod" id="paymentMethod" required>
+      <option value="">Select a payment method</option>
+      <option value="upi">UPI / यूपीआई</option>
+      <option value="cash">Cash / नकद</option>
+    </select>
+  </div> -->
+
+      <!-- Submit Button -->
+      <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+    </form>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hourly Forecast</title>
+  <link rel="stylesheet" href="hourly-forecast.css">
+  <script src="hourly-forecast.js" defer></script>
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language
+          includedLanguages: 'en,hi', // Available languages
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+          autoDisplay: true // Prevent auto display of language selector
+        },
+        'google_translate_element' // The ID of the container
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+   
+  </nav>
+
+  <!-- Container -->
+  <div class="container">
+    <header>
+      <h1>Hourly Forecast</h1>
+    </header>
+    
+    <!-- Hourly Forecast Section -->
+    <section class="hourly-forecast">
+      <h2 id="location-title">Hourly Forecast for City</h2>
+      <div id="hourly-container" class="hourly-container">
+        <!-- Dynamically populated hourly forecast will go here -->
+      </div>
+    </section>
+
+    <!-- Additional Weather Parameters -->
+    <section class="additional-parameters">
+      <h2>Additional Weather Parameters</h2>
+      <div id="parameters-container" class="parameters-grid">
+        <!-- Dynamically populated additional parameters will go here -->
+      </div>
+    </section>
+  </div>
+</body>
+</html>

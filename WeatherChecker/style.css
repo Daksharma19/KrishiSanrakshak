@@ -1,0 +1,294 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #f1faee;
+    background: radial-gradient(circle, #1d3557, #457b9d, #a8dadc);
+    transition: background 0.5s ease-in-out;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #1d3557;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #f1faee;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #ffcb77;
+    background-color: rgba(255, 203, 119, 0.2);
+    border-radius: 5px;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: #080501;
+    margin-bottom: 10px;
+  }
+  
+  .search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    flex: 1;
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .search-bar button:hover {
+    background-color: #1d3557;
+  }
+  
+  /* Weather Info Section */
+  .weather-info {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .weather-info h2 {
+    font-size: 1.8em;
+    color: #080601;
+    margin-bottom: 10px;
+  }
+  
+  .weather-info p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  .weather-info img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  /* Forecast Section */
+  .forecast {
+    margin-top: 20px;
+  }
+  
+  .forecast h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffcb77;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .forecast-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(33, 197, 212, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .forecast-item:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .forecast-item img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Hourly Forecast Section */
+  .hourly-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 20px 0;
+  }
+  
+  .hourly-item {
+    text-align: center;
+    background-color: #2982c2;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 100px;
+    margin: 0 5px;
+  }
+  
+  .hourly-item img {
+    max-width: 50px;
+  }
+  
+  /* Additional Weather Parameters */
+  .additional-parameters {
+    margin-top: 30px;
+  }
+  
+  .parameters-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+  }
+  
+  .parameter-item {
+    background-color: #f4e4e4;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .parameter-item h3 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .parameter-item p {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* India Map */
+  #map {
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Warnings */
+  #warning {
+    background-color: #f77f00;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    animation: slideDown 0.5s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Wind Map */
+  iframe {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Footer (optional if needed) */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1d3557;
+    color: #f1faee;
+  }
+  
+  /* News Ticker Styling */
+.news-ticker {
+  width: 100%;
+  background-color: #1d3557;
+  color: #f1faee;
+  font-size: 1em;
+  padding: 10px 0;
+  
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.ticker-content {
+  display: flex;
+  animation: tickerAnimation 30s linear infinite;
+}
+
+.ticker-content span {
+  padding-right: 50px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+/* Animation for the Ticker */
+@keyframes tickerAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

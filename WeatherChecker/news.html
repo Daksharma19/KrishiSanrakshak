@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather News</title>
+  <link rel="stylesheet" href="news.css">
+  <script src="news.js" defer></script>
+</head>
+<body>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language
+          includedLanguages: 'en,hi', // Available languages
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+          autoDisplay: true // Prevent auto display of language selector
+        },
+        'google_translate_element' // The ID of the container
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    
+  </nav>
+
+  <!-- News Container -->
+  <div class="container">
+    <header>
+      <h1>Weather News</h1>
+    </header>
+    <main>
+      <div class="news-list">
+        <!-- Cyclone Fungal Articles -->
+        <div class="news-item" data-id="1">
+          <h2><a href="https://www.bbc.com/news/world-asia-66005742" target="_blank">Cyclone Fungal Hits Coastal Bangladesh</a></h2>
+          <p>Click to read more...</p>
+          <div class="news-details">
+            <p>
+              Cyclone Fungal has made landfall on the coastal areas of Bangladesh, 
+              causing severe flooding and destruction. Local authorities are urging 
+              residents to evacuate as the cyclone continues to strengthen in the Bay of Bengal.
+            </p>
+          </div>
+        </div>
+        <div class="news-item" data-id="2">
+          <h2><a href="https://www.aljazeera.com/news/2024/5/19/cyclone-fungal-approaches-indias-coast" target="_blank">Cyclone Fungal to Affect Indian Coastlines</a></h2>
+          <p>Click to read more...</p>
+          <div class="news-details">
+            <p>
+              Authorities in India are on high alert as Cyclone Fungal approaches the 
+              eastern coastline. Heavy rains and strong winds are expected, with 
+              potential threats to low-lying areas.
+            </p>
+          </div>
+        </div>
+        <!-- Delhi AQI Articles -->
+        <div class="news-item" data-id="3">
+          <h2><a href="https://www.ndtv.com/india-news/delhi-aqi-reaches-hazardous-levels-3152031" target="_blank">Delhi AQI Reaches Hazardous Levels</a></h2>
+          <p>Click to read more...</p>
+          <div class="news-details">
+            <p>
+              Delhi's air quality has reached hazardous levels as the Air Quality Index (AQI) 
+              surpasses 400. Residents are advised to stay indoors and avoid outdoor activities.
+            </p>
+          </div>
+        </div>
+        <div class="news-item" data-id="4">
+          <h2><a href="https://www.timesofindia.indiatimes.com/city/delhi/delhi-aqi-improves-as-pollution-control-measures-take-effect/articleshow/87773684.cms" target="_blank">Delhi AQI Improving After Stricter Regulations</a></h2>
+          <p>Click to read more...</p>
+          <div class="news-details">
+            <p>
+              After implementing stricter pollution control measures, Delhi’s AQI has shown signs 
+              of improvement, though it still remains at unhealthy levels. The government continues 
+              to monitor the air quality.
+            </p>
+          </div>
+        </div>
+        <!-- International Weather News -->
+        <div class="news-item" data-id="5">
+          <h2><a href="https://www.cnbc.com/2024/07/10/california-wildfires-threaten-thousands-of-homes.html" target="_blank">California Wildfires Threaten Thousands of Homes</a></h2>
+          <p>Click to read more...</p>
+          <div class="news-details">
+            <p>
+              Wildfires in California have spread rapidly, fueled by strong winds and dry conditions. 
+              Thousands of homes are at risk, and emergency responders are working tirelessly to contain the blaze.
+            </p>
+          </div>
+        </div>
+        <div class="news-item" data-id="6">
+          <h2><a href="https://www.theguardian.com/world/2024/jul/05/europe-record-heatwave-temperatures" target="_blank">Europe Faces Record Heatwave in Summer 2024</a></h2>
+          <p>Click to read more...</p>
+          <div class="news-details">
+            <p>
+              Europe is facing a record heatwave this summer, with temperatures soaring above 40°C in several 
+              countries. Governments are urging people to take precautions against heat-related illnesses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- News Ticker -->
+<div class="news-ticker">
+    <div class="ticker-content">
+      <span>Delhi: AQI 160 (Moderate) | Mumbai: Clear Skies, 32°C | Kolkata: 28°C, Light Rain | Bangalore: 25°C, Partly Cloudy | Chennai: 35°C, Sunny | Hyderabad: 30°C, Scattered Clouds</span>
+    </div>
+  </div>
+  
+</body>
+</html>

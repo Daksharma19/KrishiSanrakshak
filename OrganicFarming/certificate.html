@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Organic Farming</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .certificate-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 15px double black;
+            background-color: rgb(248, 183, 226);
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .certificate-title {
+            font-size: 3em;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .certificate-subtitle {
+            font-size: 1.5em;
+            font-style: italic;
+            color: black;
+            margin-bottom: 20px;
+        }
+        .certificate-body {
+            margin: 30px 0;
+        }
+        .certificate-body label {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: black;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .certificate-body input {
+            font-size: 1.2em;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: auto;
+            text-align: center;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .certificate-body p {
+            font-size: 1.2em;
+            color: black;
+            margin: 15px 0;
+        }
+        .certificate-footer {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-block {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .signature-line {
+            margin-top: 10px;
+            border-top: 2px solid #000;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .authorized-signatory {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #444;
+        }
+        #downloadBtn {
+        margin-bottom: 50px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+        #downloadBtn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="certificate" class="certificate-container">
+        <div class="certificate-title">Certificate of Organic Farming</div>
+        <div class="certificate-subtitle">"Recognizing Excellence in Sustainable Agriculture"</div>
+        <div class="certificate-body">
+            <p>This is to certify that <input type="text" id="farmerName" placeholder="Farmer's Name"> has successfully adhered to the principles and practices of organic farming.</p>
+            <p>Issued by <input type="text" id="certifyingBody" placeholder="Certifying Body"> on <input type="date" id="issueDate">.</p>
+            <p>This certificate is valid until <input type="date" id="expiryDate">.</p>
+        </div>
+        <div class="certificate-footer">
+            <div class="signature-block">
+                <p>Authorized Signature</p>
+                <div class="signature-line"></div><br><br>
+                <p class="authorized-signatory">[Name of Signatory]</p><br><br>
+                <p class="authorized-signatory">[Certifying Body Stamp]</p>
+            </div>
+        </div>
+    </div>
+    <!-- <button id="downloadBtn">Download Certificate</button> -->
+    <div style="display: flex; justify-content: center; align-items: center; ">
+        <button id="downloadBtn">Download Certificate</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            const certificate = document.getElementById('certificate');
+            html2canvas(certificate).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF();
+                pdf.addImage(imgData, 'PNG', 10, 10, 190, 0); // Adjust positioning as needed
+                pdf.save('Certificate_of_Organic_Farming.pdf');
+            });
+        });
+    </script>
+</body>
+</html>
