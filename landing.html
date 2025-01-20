@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link rel="stylesheet" href="/project_root/assets/css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url("picture.jpg") no-repeat center center/cover;
+            color: white;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            animation: fadeInBody 1.5s ease-out;
+        }
+
+        /* Header Styling */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(50, 50, 50, 0.9);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            transform: translateY(-100px);
+            opacity: 0;
+            animation: slideInFromTop 1s forwards 0.5s;
+            color: #ff5e62;
+            text-shadow: 0 0 10px rgba(255, 94, 98, 0.8), 0 0 20px rgba(255, 94, 98, 0.6);
+        }
+
+        /* Main Content */
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+            margin-top: 80px;
+            width: 80%;
+            max-width: 800px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s forwards 1s;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #222;
+            border-radius: 50px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff5e62;
+            transform: scale(1.1);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Footer Styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        /* Animations */
+        @keyframes fadeInBody {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Language toggle button styling */
+        .language-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            /* Ensures the buttons are above other elements */
+        }
+
+        .lang-btn {
+            padding: 10px 20px;
+            background-color: rgba(50, 50, 50, 0.8);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            margin: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background-color: #ff5e62;
+            transform: scale(1.1);
+        }
+
+        .lang-btn:focus {
+            outline: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .button-group {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en', // Default language
+            includedLanguages: 'en,hi', // Available languages
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+            autoDisplay: true // Prevent auto display of language selector
+          },
+          'google_translate_element' // The ID of the container
+        );
+      }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div class="container">
+        <h1 style="color: brown;">Features</h1>
+        <div class="button-group">
+            <a href="http://localhost/hackProject/project_root/CropRotation/index.html" class="btn" id="cropRotationBtn">Crop Rotation</a>
+            <a href="http://localhost/hackProject/project_root/SoilTest/index.html" class="btn" id="soilTestBtn">Soil Test</a>
+            <a href="http://localhost/hackProject/project_root/CropDesc/" class="btn" id="cropDescriptionBtn">Crop Description</a>
+            <a href="http://localhost/hackProject/project_root/WeatherChecker/index.html" class="btn" id="weatherCheckerBtn">Weather Checker</a>
+            <a href="http://localhost/hackProject/project_root/OrganicFarming/organic_farming.html" class="btn" id="organicFarmingBtn">Know About Organic Farming</a>
+            <a href="http://localhost/hackProject/project_root/Disease_Cure/index.html" class="btn" id="diseaseCureBtn">Disease and Cure</a>
+            <a href="http://localhost/hackProject/project_root/MandiPortal/index.html" class="btn" id="mandiPortalBtn">Mandi Portal</a>
+            <a href="index.html" style="background-color: green;" class="btn" id="GoBackToHome"> Go Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Language Toggle Buttons -->
+    <!-- <div class="language-toggle">
+        <button id="english" class="lang-btn">English</button>
+        <button id="hindi" class="lang-btn">हिन्दी</button>
+    </div> -->
+
+    <footer>
+        <p id="footerText">© 2025 Krishi Vridhi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Language switch function for changing text content
+        const switchLanguage = (language) => {
+            if (language === 'en') {
+                document.getElementById('header').textContent = 'Krishi Vridhi';
+                document.querySelector('h1').textContent = 'About Us';
+                document.getElementById('cropRotationBtn').textContent = 'Crop Rotation';
+                document.getElementById('soilTestBtn').textContent = 'Soil Test';
+                document.getElementById('cropDescriptionBtn').textContent = 'Crop Description';
+                document.getElementById('weatherCheckerBtn').textContent = 'Weather Checker';
+                document.getElementById('organicFarmingBtn').textContent = 'Know About Organic Farming';
+                document.getElementById('diseaseCureBtn').textContent = 'Disease and Cure';
+                document.getElementById('mandiPortalBtn').textContent = 'Mandi Portal';
+                document.getElementById('footerText').textContent = '© 2025 Krishi Vridhi. All rights reserved.';
+            } else if (language === 'hi') {
+                document.getElementById('header').textContent = 'कृषि वृद्धि';
+                document.querySelector('h1').textContent = 'हमारे बारे में';
+                document.getElementById('cropRotationBtn').textContent = 'फसल चक्र';
+                document.getElementById('soilTestBtn').textContent = 'मिट्टी परीक्षण';
+                document.getElementById('cropDescriptionBtn').textContent = 'फसल विवरण';
+                document.getElementById('weatherCheckerBtn').textContent = 'मौसम जांचक';
+                document.getElementById('organicFarmingBtn').textContent = 'जैविक खेती के बारे में जानें';
+                document.getElementById('diseaseCureBtn').textContent = 'रोग और उपचार';
+                document.getElementById('mandiPortalBtn').textContent = 'मंडी पोर्टल';
+                document.getElementById('footerText').textContent = '© 2025 कृषि वृद्धि। सर्वाधिकार सुरक्षित।';
+            }
+        };
+
+        // document.getElementById('english').addEventListener('click', () => {
+        //     switchLanguage('en');
+        // });
+
+        // document.getElementById('hindi').addEventListener('click', () => {
+        //     switchLanguage('hi');
+        // });
+        
+    </script>
+</body>
+
+</html>

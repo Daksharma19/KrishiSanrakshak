@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Krishi Vridhi - Crop Rotation</title>
+  <link rel="stylesheet" href="/project_root/assets/css/styles.css">
+
+</head>
+
+<body>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language
+          includedLanguages: 'en,hi', // Available languages
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+          autoDisplay: true // Prevent auto display of language selector
+        },
+        'google_translate_element' // The ID of the container
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  <header id="header"></header>
+  <div class="marquee-container" style="background-color: lightgreen;">
+    <marquee class="marquee-content" behavior="slide" direction="left" scrollamount="10" onmouseover="this.stop();"
+      onmouseout="this.start();">
+      <a href="https://agricoop.gov.in/" target="_blank">Ministry of Agriculture & Farmers Welfare</a>
+      <a href="https://pmkisan.gov.in/" target="_blank">PM Kisan Samman Nidhi</a>
+      <a href="https://icar.org.in/" target="_blank">ICAR (Indian Council of Agricultural Research) </a>
+      <a href="https://enam.gov.in/" target="_blank">eNAM (National Agriculture Market)</a>
+      <a href="https://dbtbharat.gov.in/" target="_blank">Fertilizer Subsidy (DBT in Agriculture)</a>
+    </marquee>
+
+  </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+
+      <h2 id="heroTitle">Optimize Your Farm's Productivity</h2>
+      <p id="heroText">Get personalized crop rotation advice to improve soil health and maximize your harvest!</p>
+      <br>
+      <a href="#cta" class="cta-button" id="ctaButton">Get Started</a>
+    </div>
+  </section>
+
+
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h3 id="aboutTitle">Why Choose Krishi Vridhi?</h3>
+    <p id="aboutText">At Krishi Vridhi, we empower farmers with data-driven crop rotation solutions to enhance soil
+      fertility and increase yields sustainably. Our platform is designed to bring innovation to traditional farming
+      practices, making them more efficient and productive.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Soil Test</h3>
+        <p>Submit your soil data to get insights into its texture, moisture, and pH level.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Crop Rotation Recommendations</h3>
+        <p>Get personalized crop rotation suggestions tailored to your soil and farm conditions.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Progress Tracking</h3>
+        <p>Track your farm’s crop rotation progress and set reminders for planting and harvesting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div>
+    <h2 style="text-align: center;">Skip Sign in Options</h2>
+    <h3 style="text-align: center;"><a href="landing.html" >Let's Go</a></h3>
+  </div> -->
+
+  <section id="cta" class="cta">
+    <h2>Ready to Optimize Your Farm?</h2>
+    <p>Sign up now and start improving your crop yield with the power of smart crop rotation!</p>
+    <div class="cta-buttons">
+      <a href="http://localhost/hackProject/project_root/signin.php"  class="cta-button" id="signinLink">Sign In</a>
+      <a href="http://localhost/hackProject/project_root/signup.php"  class="cta-button" id="signupLink">Sign Up</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p id="footerText">© 2025 Krishi Vridhi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading the header:', error));
+  </script>
+
+</body>
+
+</html>

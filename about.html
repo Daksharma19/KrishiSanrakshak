@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/project_root/assets/css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9966, #ff5e62);
+        }
+        /* Header Styling */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+        /* Main Content */
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            margin-top: 80px;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        /* Team Cards */
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Footer Styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">Krishi Vridhi</header>
+    <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language
+          includedLanguages: 'en,hi', // Available languages
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+          autoDisplay: true // Prevent auto display of language selector
+        },
+        'google_translate_element' // The ID of the container
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div class="container">
+        <h1>Our Team</h1>
+        <div class="team">
+            <div class="card">
+                <img src="/project_root/assets/images/prateek.jpg" alt="Team Member">
+                <h3>Prateek</h3>
+                <p>Creative Designer with a passion for UI/UX.</p>
+            </div>
+            <div class="card">
+                <img src="/project_root/assets/images/profile.jpg" alt="Team Member">
+                <h3>Rishabh Tripathi</h3>
+                <p>Frontend Developer crafting amazing web experiences.</p>
+            </div>
+            <div class="card">
+                <img src="/project_root/assets/images/profile.jpg" alt="Team Member">
+                <h3>Aditya Rana</h3>
+                <p>Backend Engineer, making data flow seamlessly.</p>
+            </div>
+            <div class="card">
+                <img src="/project_root/assets/images/profile.jpg" alt="Team Member">
+                <h3>Daksh Sharma</h3>
+                <p>Marketing Specialist growing digital brands.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="footerText">© 2025 Krishi Vridhi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading the header:', error));
+    </script>
+</body>
+</html>
