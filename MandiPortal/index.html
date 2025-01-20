@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMandiMart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language
+          includedLanguages: 'en,hi', // Available languages
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+          autoDisplay: true // Prevent auto display of language selector
+        },
+        'google_translate_element' // The ID of the container
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Header -->
+    <div class="appheader">
+        <h1>Mandi Portal</h1>
+        <p>Get Complete Details of the Market</p>
+    </div>
+    
+    <!-- Form Section -->
+    <div class="form-container">
+        <form id="mandiForm">
+            <div class="form-group">
+                <input id="text1" type="text" name="marketName" placeholder="Enter Market / Crop Name" required>
+                <button id="textbtn" type="submit">Search</button>
+            </div>
+            <div class="button-group">
+                <button id="btn" type="button">Get Mandi Details</button>
+                <button id="btn_sort" type="button">Sort By Price</button>
+                <button id="btn_sort_district" type="button">Sort By District</button>
+                <button id="btn_sort_state" type="button">Sort By State</button>
+            </div>
+        </form>
+    </div>
+    
+    <!-- <div id="lastUpdated"></div> -->
+    <div id="display_mandi"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

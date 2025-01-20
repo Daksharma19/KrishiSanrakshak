@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Details</title>
+    <link rel="stylesheet" href="/project_root/assets/css/desc.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Centering the crop details container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        #crop-details-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #crop-name {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #crop-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        #crop-desc {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            text-align: left;
+        }
+
+        /* Ensuring proper spacing on smaller screens */
+        @media (max-width: 600px) {
+            #crop-name {
+                font-size: 1.8rem;
+            }
+
+            #crop-desc {
+                font-size: 0.9rem;
+            }
+
+            #crop-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language
+          includedLanguages: 'en,hi', // Available languages
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+          autoDisplay: true // Prevent auto display of language selector
+        },
+        'google_translate_element' // The ID of the container
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <header>
+        Crop Information
+    </header>
+
+    <div class="container">
+        <div id="crop-details-container">
+            <h1 id="crop-name"></h1>
+            <img id="crop-image" src="" alt="Crop Image">
+            <p id="crop-desc"></p>
+        </div>
+    </div>
+
+    <script>
+        // Get query parameters from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const cropName = urlParams.get('crop');
+        const cropImage = urlParams.get('image');
+        const cropDesc = urlParams.get('desc');
+
+        // Update the details page with the crop data
+        document.getElementById('crop-name').innerText = cropName;
+        document.getElementById('crop-image').src = cropImage;
+        document.getElementById('crop-desc').innerText = decodeURIComponent(cropDesc);
+    </script>
+</body>
+</html>

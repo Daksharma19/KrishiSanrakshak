@@ -1,0 +1,178 @@
+[
+    {
+        "crop": "Maize",
+        "image": "images/crops/maize.jpg",
+        "diseases": [
+            {
+                "name": "Turcicum Leaf Blight (Exserohilum turcicum)",
+                "image": "images/diseases/turcicum_leaf_blight.jpg",
+                "symptoms": "Large, elongated lesions with gray centers and dark borders.",
+                "control": "Use resistant hybrids, fungicide treatments, and crop rotation."
+            },
+            {
+                "name": "Southern Corn Leaf Blight (Cochliobolus heterostrophus)",
+                "image": "images/diseases/southern_corn_leaf_blight.jpg",
+                "symptoms": "Narrow lesions on leaves, which may turn yellow or brown.",
+                "control": "Use resistant varieties, fungicides, and avoid excessive moisture."
+            },
+            {
+                "name": "Charcoal Rot (Macrophomina phaseolina)",
+                "image": "images/diseases/charcoal_rot.jpg",
+                "symptoms": "Wilting, stunted growth, and a characteristic black mold in roots.",
+                "control": "Use well-drained soils, practice crop rotation, and adopt resistant hybrids."
+            }
+        ]
+    },
+
+    {
+        "crop": "Rice",
+        "image": "images/crops/rice.jpg",
+        "diseases": [
+            {
+                "name": "Blast Disease (Pyricularia oryzae)",
+                "image": "images/diseases/blast_disease.jpg",
+                "symptoms": "Grayish lesions on leaves, which develop into holes.",
+                "control": "Use resistant varieties, fungicides, and proper field management practices."
+            },
+            {
+                "name": "Bacterial Blight (Xanthomonas oryzae)",
+                "image": "images/diseases/bacterial_blight_rice.jpg",
+                "symptoms": "Yellowing and wilting of leaves, water-soaked lesions.",
+                "control": "Use resistant varieties, avoid infected seeds, and adopt proper irrigation practices."
+            },
+            {
+                "name": "Rice Sheath Blight (Rhizoctonia solani)",
+                "image": "images/diseases/rice_sheath_blight.jpg",
+                "symptoms": "Water-soaked lesions on leaves that turn grayish-brown.",
+                "control": "Use resistant varieties, fungicide treatment, and improve air circulation."
+            }
+        ]
+    },
+
+    {
+        "crop": "Pulses",
+        "image": "images/crops/pulses.jpg",
+        "diseases": [
+            {
+                "name": "Rust (Puccinia spp.)",
+                "image": "images/diseases/rust_pulses.jpg",
+                "symptoms": "Small, orange pustules on leaves and stems.",
+                "control": "Use resistant varieties, timely fungicide application, and crop rotation."
+            },
+            {
+                "name": "Fusarium Wilt (Fusarium oxysporum)",
+                "image": "images/diseases/fusarium_wilt_pulses.jpg",
+                "symptoms": "Yellowing of leaves and stunted growth.",
+                "control": "Use resistant varieties, soil treatment, and proper drainage."
+            },
+            {
+                "name": "Ascochyta Blight (Ascochyta rabiei)",
+                "image": "images/diseases/ascochyta_blight.jpg",
+                "symptoms": "Dark lesions on stems and leaves, often with a sunken center.",
+                "control": "Use resistant varieties, crop rotation, and fungicide treatments."
+            }
+        ]
+    },
+  
+    {
+        "crop": "Wheat",
+        "image": "images/crops/wheat.jpg",
+        "diseases": [
+            {
+                "name": "Rust (Puccinia spp.)",
+                "types": ["Leaf rust", "Stem rust", "Stripe rust"],
+                "image": "images/diseases/rust_disease.jpg",
+                "symptoms": "Small reddish or orange pustules on leaves, stems, and heads.",
+                "control": "Use resistant varieties, timely fungicide application."
+            },
+            {
+                "name": "Bacterial Leaf Blight (Xanthomonas campestris)",
+                "image": "images/diseases/blight.jpg",
+                "symptoms": "Water-soaked lesions on leaves turning yellow and wilting.",
+                "control": "Use disease-free seeds, crop rotation, and resistant varieties."
+            },
+            {
+                "name": "Fusarium Wilt (Fusarium oxysporum)",
+                "image": "images/diseases/fusarium.jpg",
+                "symptoms": "Yellowing of leaves, stunted growth, and premature death of the plant.",
+                "control": "Avoid waterlogging, use resistant varieties, and proper soil management."
+            }
+        ]
+    },
+  
+    {
+        "crop": "Sorghum",
+        "image": "images/crops/sorghum.jpg",
+        "diseases": [
+            {
+                "name": "Downy Mildew (Peronosclerospora sorghi)",
+                "image": "images/diseases/downy_mildew.jpg",
+                "symptoms": "Yellow streaks on leaves, which later turn into white fungal growth.",
+                "control": "Use resistant varieties, early planting, and seed treatment with fungicides."
+            },
+            {
+                "name": "Ergot (Claviceps africana)",
+                "image": "images/diseases/ergot.jpg",
+                "symptoms": "Swollen, hardened fungal growth on flowers, affecting seed quality.",
+                "control": "Remove infected plants, use fungicides, and avoid excessive moisture."
+            },
+            {
+                "name": "Anthracnose (Colletotrichum graminicola)",
+                "image": "images/diseases/anthracnose.jpg",
+                "symptoms": "Dark lesions on stems, leaves, and seeds.",
+                "control": "Use resistant varieties, crop rotation, and fungicide treatment."
+            }
+        ]
+    },
+
+    {
+        "crop": "Millet",
+        "image": "images/crops/millet.jpg",
+        "diseases": [
+            {
+                "name": "Downy Mildew (Sclerospora graminicola)",
+                "image": "images/diseases/downy_mildew_millet.jpg",
+                "symptoms": "Yellow streaks on leaves and white fungal growth.",
+                "control": "Use resistant varieties, fungicide application, and proper field hygiene."
+            },
+            {
+                "name": "Blast (Pyricularia grisea)",
+                "image": "images/diseases/blast_millet.jpg",
+                "symptoms": "Small, round lesions with grayish centers.",
+                "control": "Use resistant varieties, crop rotation, and fungicides."
+            },
+            {
+                "name": "Leaf Spot (Alternaria spp.)",
+                "image": "images/diseases/leaf_spot_millet.jpg",
+                "symptoms": "Circular spots with dark centers on leaves.",
+                "control": "Fungicide application and removing infected plant debris."
+            }
+        ]
+    },
+ 
+    {
+        "crop": "Groundnut",
+        "image": "images/crops/Groundnut.jpg",
+        "diseases": [
+            {
+                "name": "Early Leaf Spot (Cercospora arachidicola)",
+                "image": "images/diseases/early_leaf_spot.jpg",
+                "symptoms": "Round, brown spots with yellow halos on leaves.",
+                "control": "Fungicide application, crop rotation, and resistant varieties."
+            },
+            {
+                "name": "Tikka Disease (Cercospora personata)",
+                "image": "images/diseases/tikka_disease.jpg",
+                "symptoms": "Lesions on leaves, stems, and pods; dark brown spots.",
+                "control": "Use resistant varieties, proper crop rotation, and fungicide treatments."
+            },
+            {
+                "name": "Root Rot (Fusarium solani)",
+                "image": "images/diseases/root_rot.jpg",
+                "symptoms": "Yellowing of leaves, wilting, and stunted growth.",
+                "control": "Use disease-free seeds, proper irrigation management, and soil treatment."
+            }
+        ]
+    }
+   
+]

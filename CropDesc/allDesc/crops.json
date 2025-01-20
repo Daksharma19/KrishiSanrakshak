@@ -1,0 +1,64 @@
+{
+  "crops": [
+    {
+      "name": "Wheat",
+      "image":"images/wheat.jpg" ,
+      "shortDesc": "Wheat is a widely cultivated cereal grain.",
+      "fullDesc": "Favorable Conditions for Wheat Growth: Wheat grows best in cool temperatures between 10°C to 15°C during the sowing and early growing stages, and 20°C to 25°C during the flowering and ripening stages. The ideal soil is loamy, well-drained with a neutral pH of 6 to 7.5. Proper drainage is crucial to prevent waterlogging, and fertile soil rich in nitrogen, phosphorus, and potassium supports growth. Wheat requires moderate irrigation, with regions receiving about 450-700 mm of annual rainfall being most suitable. The crop needs full sunlight for about 6-8 hours a day. It thrives at low to moderate altitudes (300m to 1,200m). Wheat is best sown in October-November during the rabi season.\n\nUnfavorable Conditions for Wheat Growth: Temperatures exceeding 30°C cause heat stress, leading to poor grain formation. Frost and extremely low temperatures below 7°C affect germination and flowering. Saline, alkaline, acidic, or waterlogged soils hinder growth. Insufficient or excessive water affects yield. Low sunlight due to cloud cover reduces photosynthesis. Wheat is vulnerable to pests like aphids and locusts and diseases such as rust, blight, and mildew. Soil erosion in monoculture farming depletes nutrients, and saline irrigation water affects root function."
+    },
+    {
+      "name": "Cotton",
+      "image": "images/cotton.jpg",
+      "shortDesc": "Cotton is a fiber crop used in textile production.",
+      "fullDesc": "Favorable Conditions for Cotton Growth: Cotton grows best in warm temperatures between 25°C to 35°C. It requires well-drained loamy or sandy loam soils with good aeration and a pH of 6.0 to 8.5. Fertile soils rich in nitrogen, phosphorus, and potassium support healthy growth. Cotton requires moderate rainfall between 450-800 mm annually, with proper irrigation during flowering and boll formation. Full sunlight for 6-8 hours daily is crucial. Moderate humidity is ideal, while strong winds should be avoided. It is sown between April and May in most parts of India and grows well at altitudes up to 1,200 meters.\n\nUnfavorable Conditions for Cotton Growth: Temperatures below 15°C hinder germination, and excessive heat above 40°C causes heat stress. Saline, alkaline, or poorly drained soils damage roots. Excessive water leads to root rot. Insufficient sunlight affects fiber quality. Cotton is vulnerable to pests like bollworms, aphids, and whiteflies and diseases such as rust and blight. High winds, dust storms, and soil erosion affect yield."
+    },
+    {
+      "name": "Mustard",
+      "image": "images/mustard.jpg",
+      "shortDesc": "Mustard is an oilseed crop grown for its seeds, which produce mustard oil.",
+      "fullDesc": "Favorable Conditions for Mustard Growth: Mustard grows best in cool climates with an optimal temperature range of 15°C to 25°C. It prefers well-drained loamy or clay loam soils with a pH of 6.0 to 7.5. Fertile soils rich in nitrogen, phosphorus, and potassium are essential. Mustard requires moderate rainfall between 400-600 mm and full sunlight for 6-8 hours daily. Moderate humidity (50-70%) supports growth. It is a rabi crop sown between October and November. It thrives at altitudes up to 1,500 meters.\n\nUnfavorable Conditions for Mustard Growth: Frost or extreme cold below 5°C damages flowering. High temperatures above 30°C reduce seed formation. Saline, alkaline, or waterlogged soils affect growth. Insufficient or excessive water leads to poor yield. Low sunlight affects oil content. Pests like aphids and whiteflies, and diseases such as mildew and blight, reduce productivity. Strong winds and soil erosion harm plants."
+    },
+    {
+      "name": "Rice",
+      "image": "images/rice.jpg",
+      "shortDesc": "Rice is a staple food crop grown in warm climates around the world.",
+      "fullDesc": "Favorable Conditions for Rice Growth: Rice thrives in warm temperatures between 25°C to 32°C and requires a lot of water. The ideal soil is flooded (paddy soil) with a pH of 5.5 to 7.0. It requires high humidity and at least 800-1500 mm of rainfall annually. Rice needs full sunlight for 10-12 hours per day. It is typically planted during the Kharif season (June to September) in tropical and subtropical regions.\n\nUnfavorable Conditions for Rice Growth: Rice cannot tolerate frost or temperatures below 10°C. Waterlogging in fields with poor drainage can lead to root rot. Insufficient sunlight or excess shade weakens the crop, while pests like rice weevils and diseases like rice blast affect yield."
+    },
+    {
+      "name": "Barley",
+      "image": "images/barley.jpg",
+      "shortDesc": "Barley is a cereal grain used in food, beverages, and animal feed.",
+      "fullDesc": "Favorable Conditions for Barley Growth: Barley prefers cool temperatures between 12°C to 20°C and grows well in loamy soils with a pH of 6.0 to 7.5. It requires moderate rainfall (300-700 mm annually) and full sunlight for 6-8 hours a day. It is typically sown in early spring or autumn, depending on the climate.\n\nUnfavorable Conditions for Barley Growth: Excessive heat above 30°C during grain filling stages affects the quality. Poorly drained soils and high salinity reduce growth. Water stress, particularly during the flowering period, causes reduced yield. Barley is also susceptible to pests like aphids and diseases like leaf rust."
+    },
+    {
+      "name": "Sugarcane",
+      "image": "images/sugercane.jpg",
+      "shortDesc": "Sugarcane is a tropical crop grown for its juice, used in sugar production.",
+      "fullDesc": "Favorable Conditions for Sugarcane Growth: Sugarcane thrives in warm temperatures between 25°C to 32°C and requires a tropical or subtropical climate. The ideal soil is well-drained, loamy, and rich in organic matter with a pH of 6.0 to 8.5. High fertility with nitrogen, phosphorus, and potassium supports growth. The crop is highly water-intensive, requiring 1,500 to 2,000 mm of rainfall annually or frequent irrigation. Full sunlight for 10-12 hours a day is essential. High humidity (60-80%) aids growth. It is usually planted from February to June in tropical areas and thrives at altitudes up to 1,500 meters.\n\nUnfavorable Conditions for Sugarcane Growth: Cold temperatures below 20°C slow growth, while extreme heat above 40°C reduces sugar content. Poorly drained, heavy clay, or highly saline soils hinder development. Excessive water causes root rot and fungal diseases. Low sunlight or excessive shade weakens growth. Pests like borers and scale insects, and diseases such as red rot and smut, reduce yield. High winds, cyclones, and soil erosion affect productivity."
+    },
+    {
+      "name": "Maize (Corn)",
+      "image": "images/maize.jpg",
+      "shortDesc": "Maize, or corn, is a cereal plant widely grown for its grain.",
+      "fullDesc": "Favorable Conditions for Maize Growth: Maize thrives in warm temperatures between 20°C to 30°C and requires well-drained, fertile soils with a pH of 6.0 to 7.0. The crop needs about 500-800 mm of rainfall annually and full sunlight for 8-12 hours a day. Maize is typically sown in spring and requires moderate irrigation.\n\nUnfavorable Conditions for Maize Growth: Extremely low or high temperatures affect growth and pollination. Poor drainage and waterlogging damage the roots, while excessive water leads to fungal diseases. Pests like maize weevils, armyworms, and diseases like maize smut affect yield."
+    },
+    {
+      "name": "Chickpeas",
+      "image": "images/chickpea.jpg",
+      "shortDesc": "Chickpeas are leguminous plants widely used in food and cooking.",
+      "fullDesc": "Favorable Conditions for Chickpea Growth: Chickpeas prefer dry, cool climates with temperatures between 18°C to 30°C. The ideal soil is well-drained, sandy loam with a pH of 6.0 to 7.5. They require moderate rainfall (300-500 mm) and full sunlight for 6-8 hours per day. The crop is typically sown in winter or early spring.\n\nUnfavorable Conditions for Chickpea Growth: Excessive rain, high humidity, or waterlogging can cause root rot. Chickpeas are sensitive to frost, which affects seed formation. High temperatures during flowering reduce pod set. Pests like aphids, beetles, and fungal diseases like blight reduce productivity."
+    },
+    {
+      "name": "Potato",
+      "image": "images/potato.jpg",
+      "shortDesc": "Potato is a root vegetable grown for its edible tubers.",
+      "fullDesc": "Favorable Conditions for Potato Growth: Potatoes grow best in cool temperatures between 15°C to 20°C. The ideal soil is loose, well-drained, sandy loam with a pH of 5.0 to 6.5. The crop requires moderate rainfall (500-800 mm annually) and full sunlight for 6-8 hours a day. It is usually planted in early spring and harvested in late summer.\n\nUnfavorable Conditions for Potato Growth: High temperatures above 30°C and excessive rainfall can lead to poor tuber formation. Waterlogged soils or poorly drained fields cause tuber rot. Low sunlight reduces photosynthesis, affecting yield. Potato is susceptible to pests like aphids and diseases like late blight and wilt."
+    },
+    {
+      "name": "Tomato",
+      "image": "images/tomato.jpg",
+      "shortDesc": "Tomato is a fruit widely grown for its culinary uses in dishes and sauces.",
+      "fullDesc": "Favorable Conditions for Tomato Growth: Tomatoes grow best in warm temperatures between 20°C to 30°C and need well-drained, loamy soils with a pH of 6.0 to 6.8. The crop requires full sunlight for 6-8 hours a day and moderate rainfall (600-800 mm annually). It is usually planted in early spring and harvested in summer.\n\nUnfavorable Conditions for Tomato Growth: Frost damages tomato plants. Excessive heat or high humidity causes wilting and reduced fruit set. Poor drainage leads to root rot. Tomato plants are prone to pests like whiteflies and aphids, and diseases such as blight, early blight, and bacterial wilt."
+    }
+  ]
+}

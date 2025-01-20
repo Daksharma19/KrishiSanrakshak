@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Rotation for Sustainable Soil Health</title>
+    <!-- <link rel="stylesheet" href="cr.css"> -->
+    <style>
+        /* styles.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #2e8b57;
+        }
+
+        .input-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        select,
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 250px;
+        }
+
+        button {
+            background-color: #2e8b57;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3cb371;
+        }
+
+        #recommendation {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #555;
+        }
+
+        .designerBox {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+            /* Light background color */
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 1px 3px rgba(0, 0, 255, 0.3),
+                0 0 10px rgba(0, 255, 0, 0.2);
+            max-width: 600px;
+            /* Set a max width for the box */
+            text-align: center;
+            /* Center the text */
+            font-family: 'Arial', sans-serif;
+            /* Font styling */
+            transition: transform 0.3s, box-shadow 0.3s;
+            /* Smooth hover effect */
+        }
+
+        .designerBox:hover {
+            transform: scale(1.02);
+            /* Slightly enlarge on hover */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2),
+                0 2px 4px rgba(0, 0, 255, 0.4),
+                0 0 15px rgba(0, 255, 0, 0.3);
+            /* Enhance shadow on hover */
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en', // Default language
+                    includedLanguages: 'en,hi', // Available languages
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+                    autoDisplay: true // Prevent auto display of language selector
+                },
+                'google_translate_element' // The ID of the container
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <header>
+        <h1>Crop Rotation for Sustainable Soil Health</h1>
+        <p>Choose your state or union territory and soil texture to get personalized crop rotation recommendations.</p>
+    </header>
+
+    <section class="input-section">
+        <div class="input-container">
+            <label for="state">Select State/Union Territory:</label>
+            <select id="state">
+                <option value="">--Select State/Union Territory--</option>
+                <option value="andhraPradesh">Andhra Pradesh</option>
+                <option value="arunachalPradesh">Arunachal Pradesh</option>
+                <option value="assam">Assam</option>
+                <option value="bihar">Bihar</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+                <option value="goa">Goa</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="haryana">Haryana</option>
+                <option value="himachalPradesh">Himachal Pradesh</option>
+                <option value="jharkhand">Jharkhand</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+                <option value="madhyaPradesh">Madhya Pradesh</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="manipur">Manipur</option>
+                <option value="meghalaya">Meghalaya</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="nagaland">Nagaland</option>
+                <option value="odisha">Odisha</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="sikkim">Sikkim</option>
+                <option value="tamilnadu">Tamil Nadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="tripura">Tripura</option>
+                <option value="uttarPradesh">Uttar Pradesh</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="westBengal">West Bengal</option>
+                <option value="andamanNicobar">Andaman & Nicobar Islands</option>
+                <option value="chandigarh">Chandigarh</option>
+                <option value="dadraNagarHaveli">Dadra & Nagar Haveli</option>
+                <option value="damanDiu">Daman & Diu</option>
+                <option value="delhi">Delhi</option>
+                <option value="lakshadweep">Lakshadweep</option>
+                <option value="puducherry">Puducherry</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <label for="soilTexture">Select Soil Texture:</label>
+            <select id="soilTexture">
+                <option value="">--Select Soil Texture--</option>
+                <option value="clay">Clay</option>
+                <option value="sandy">Sandy</option>
+                <option value="loam">Loamy</option>
+                <option value="saline">Saline</option>
+                <option value="peat">Peat</option>
+                <option value="chalk">Chalk</option>
+                <option value="loess">Loess</option>
+                <!-- You can add more soil types if needed -->  
+            </select>
+        </div>
+
+        <button id="getRecommendation">Get Crop Rotation Plan</button>
+    </section>
+
+    <section id="recommendation" class="hidden designerBox">
+        <h2>Recommended Crop Rotation Plan:</h2>
+        <p id="cropPlan" style="color: lightseagreen;"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Crop Rotation for Sustainable Soil Health. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

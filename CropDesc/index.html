@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Descriptions</title>
+  <style>
+    header {
+      background-color: #004d00;
+      padding: 10px;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo h1 {
+      color: white;
+      margin: 0;
+      font-family: 'Lobster', cursive;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    header nav ul li {
+      margin-right: 20px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 1.1em;
+    }
+
+    header nav ul li a:hover {
+      background-color: #005c00;
+      border-radius: 5px;
+    }
+  </style>
+  <link rel="stylesheet" href="desc.css">
+</head>
+<img src="/project_root/assets/images/wheat.jpg" alt="">
+<body>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en', // Default language
+          includedLanguages: 'en,hi', // Available languages
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Inline layout for one button
+          autoDisplay: true // Prevent auto display of language selector
+        },
+        'google_translate_element' // The ID of the container
+      );
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- <header id="header"></header> -->
+   <h1 style="color:green; text-align: center;">Crop Description</h1>
+  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Search for a crop...">
+    <button id="search-button">Search</button>
+  </div>
+
+  <div id="crop-container" class="crop-container">
+    <!-- Crop cards will be dynamically inserted here -->
+  </div>
+  <footer>
+    <p id="footerText">© 2025 Krishi Vridhi. All rights reserved.</p>
+  </footer>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading the header:', error));
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
